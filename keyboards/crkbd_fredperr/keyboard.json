@@ -1,8 +1,8 @@
 {
-    "keyboard_name": "Corne V3",
+    "keyboard_name": "Corne V3 FredPerr",
     "manufacturer": "PandaKB.COM",
     "url": "",
-    "maintainer": "PandaKB.COM",
+    "maintainer": "FredPerr",
     "processor": "RP2040",
     "bootloader": "rp2040",
     "usb": {

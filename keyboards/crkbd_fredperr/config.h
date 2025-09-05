@@ -23,7 +23,8 @@
  * Feature disable options
  *  These options are also useful to firmware size reduction.
  */
-//#define MASTER_RIGHT
+// Match master to physical wiring - right side is master (where RGB works)
+// #define MASTER_RIGHT
 #define SPLIT_HAND_PIN GP21
 #define	SPLIT_HAND_PIN_LOW_IS_LEFT
 #define USE_SERIAL
@@ -50,7 +51,7 @@
     #define SPLIT_LED_STATE_ENABLE
     #define SPLIT_MODS_ENABLE
     #define SPLIT_WPM_ENABLE
-    // #define SPLIT_OLED_ENABLE              // 不要打开 打开之后副手OLED就不亮了
+    // #define SPLIT_OLED_ENABLE              // Do not enable this, it will cause the right OLED to not light up
 #endif
 
 #ifdef RGB_MATRIX_ENABLE
@@ -65,7 +66,7 @@
     #define RGB_MATRIX_KEYPRESSES
     #define RGB_MATRIX_SLEEP
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 128
-    #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT
+    #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_JELLYBEAN_RAINDROPS
 
     #define ENABLE_RGB_MATRIX_ALPHAS_MODS         // Static dual hue, speed is hue for secondary hue
     #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN    // Static gradient top to bottom, speed controls how much gradient changes

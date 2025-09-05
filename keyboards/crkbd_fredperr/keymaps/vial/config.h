@@ -25,4 +25,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DYNAMIC_KEYMAP_MACRO_COUNT 32
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 
+#define UNICODE_KEY_MAP KC_LEFT_ALT // for macOS
+#define UNICODE_SELECTED_MODES UNICODE_MODE_MACOS
 // #define VIALRGB_NO_DIRECT

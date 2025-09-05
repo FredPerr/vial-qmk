@@ -17,6 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include QMK_KEYBOARD_H
+#include "keymap_canadian_french.h"
 
 #include <stdio.h>
 
@@ -25,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     MT(MOD_LGUI, KC_ESC),   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         KC_Y,    KC_U,    KC_I,        KC_O,    KC_P,    MT(MOD_RGUI, KC_LBRC),
     LCTL_T(KC_TAB),         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         KC_H,    KC_J,    KC_K,        KC_L,    KC_SCLN, MT(MOD_RCTL, KC_QUOT),
     KC_LALT,                KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,         KC_N,    KC_M,    KC_COMM,     KC_DOT,  KC_SLSH, KC_RBRC,
-                   LT(1, KC_BSPC), LSFT_T(KC_SPACE), LT(2, KC_ENTER),      LT(2, KC_ENTER), RSFT_T(KC_SPACE), LT(1, KC_DELETE)
+                   LT(1, KC_BSPC), LSFT_T(KC_SPACE), LT(2, KC_ENTER),      LT(4, KC_ENTER), RSFT_T(KC_SPACE), LT(1, KC_DELETE)
   ),
 
   [1] = LAYOUT_split_3x6_3(
@@ -47,7 +48,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      RGB_TOG,         RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, RGB_MOD,      RGB_MOD, RGB_SPI,  RGB_VAI, RGB_SAI, RGB_HUI, RGB_TOG, \
      _______,         RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, RGB_RMOD,     RGB_RMOD,RGB_SPD,  RGB_VAD, RGB_SAD, RGB_HUD, _______, \
                                       _______, _______,   _______,      _______, _______,   _______\
+  ),
+
+  [4] = LAYOUT_split_3x6_3(
+     _______, UC(FR_A_CIRC), UC(FR_E_CIRC), UC(FR_E_ACUTE),  _______, _______,      _______, UC(FR_U_GRAVE), UC(FR_I_CIRC), UC(FR_O_CIRC), _______, _______, \
+     _______, UC(FR_A_GRAVE), _______, UC(FR_E_GRAVE),  _______, _______,      _______, UC(FR_U_CIRC), UC(FR_I_UML), _______, _______, _______, \
+     _______, _______, UC(FR_E_UML), UC(FR_C_CED),  _______, _______,      _______, _______, UC(FR_U_UML), UC(FR_GRAVE), _______, _______, \
+                                _______, LT(5, KC_TRNS), _______,      _______, LT(5, KC_TRNS),   _______\
+  ),
+
+  [5] = LAYOUT_split_3x6_3(
+     _______, _______, UC(FR_E_CIRC_CAP), UC(FR_E_ACUTE_CAP),  _______, _______,       _______, UC(FR_U_CIRC_CAP), UC(FR_I_CIRC_CAP), _______, _______, _______, \
+     _______, UC(FR_A_GRAVE_CAP), _______, UC(FR_E_GRAVE_CAP),  _______, _______,      _______, UC(FR_U_GRAVE_CAP), UC(FR_I_UML_CAP), _______, _______, _______, \
+     _______, _______, _______, UC(FR_C_CED_CAP),  _______, _______,                    _______, _______, _______, _______, _______, _______, \
+                                _______, _______, _______, _______, _______,   _______\
   )
 };
+
+
 
 #include "oled.c"

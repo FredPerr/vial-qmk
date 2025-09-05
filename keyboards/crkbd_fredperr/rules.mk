@@ -36,3 +36,6 @@ WPM_ENABLE      = yes
 LTO_ENABLE          =  yes
 
 LAYOUTS = split_3x6_3
+
+UNICODE_COMMON = yes
+UNICODE_ENABLED = yes
