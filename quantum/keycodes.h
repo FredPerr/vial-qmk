@@ -32,38 +32,6 @@
 #define QMK_KEYCODES_VERSION_MINOR 0
 #define QMK_KEYCODES_VERSION_PATCH 7
 
-enum qk_keycode_accentuated {
-    FR_E_ACUTE      = 0x00E9, // é
-    FR_E_GRAVE      = 0x00E8, // è
-    FR_E_CIRC       = 0x00EA, // ê
-    FR_E_UML        = 0x00EB, // ë
-    FR_A_GRAVE      = 0x00E0, // à
-    FR_A_CIRC       = 0x00E2, // â
-    FR_A_UML        = 0x00E4, // ä
-    FR_U_GRAVE      = 0x00F9, // ù
-    FR_U_CIRC       = 0x00FB, // û
-    FR_U_UML        = 0x00FC, // ü
-    FR_O_CIRC     = 0x00F4, // ô
-    FR_I_CIRC     = 0x00EE, // î
-    FR_I_UML      = 0x00EF, // ï
-    FR_C_CED       = 0x00E7, // ç
-    FR_OE           = 0x0153, // œ
-    FR_GRAVE     = 0x0060, // `
-    // Capitals
-    FR_E_ACUTE_CAP  = 0x00C9, // É
-    FR_E_GRAVE_CAP  = 0x00C8, // È
-    FR_E_CIRC_CAP   = 0x00CA, // Ê
-    FR_A_GRAVE_CAP  = 0x00C0, // À
-    FR_C_CED_CAP    = 0x00C7, // Ç
-    FR_U_GRAVE_CAP  = 0x00D9, // Ù
-    FR_U_CIRC_CAP   = 0x00DB, // Û
-    FR_U_UML_CAP    = 0x00DC, // Ü
-    FR_I_CIRC_CAP   = 0x00CE, // Î
-    FR_I_UML_CAP    = 0x00CF, // Ï
-    FR_OE_CAP       = 0x0152, // Œ
-
-
-};
 
 enum qk_keycode_ranges {
 // Ranges
