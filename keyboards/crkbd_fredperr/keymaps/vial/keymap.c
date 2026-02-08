@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [5] = LAYOUT_split_3x6_3(
      _______, _______, UC(FR_E_CIRC_CAP), UC(FR_E_ACUTE_CAP),  _______, _______,       _______, UC(FR_U_CIRC_CAP), UC(FR_I_CIRC_CAP), _______, _______, _______, \
-     _______, UC(FR_A_GRAVE_CAP), _______, UC(FR_E_GRAVE_CAP),  _______, _______,      _______, UC(FR_U_GRAVE_CAP), UC(FR_I_UML_CAP), _______, _______, _______, \
+     _______, UC(FR_A_GRAVE_CAP), _______, UC(FR_E_GRAVE_CAP),  _______, _______,      _______, UC(FR_U_GRAVE_CAP), UC(FR_I_UML_CAP), FR_DGRV, _______, _______, \
      _______, _______, _______, UC(FR_C_CED_CAP),  _______, _______,                    _______, _______, _______, _______, _______, _______, \
                                 _______, _______, _______, _______, _______,   _______\
   )
