@@ -107,9 +107,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Remaining keys that should not have conflict with other use cases are g,m,n,o,p,q,r,s,t,u,v,y,z
   [6] = LAYOUT_split_3x6_3(
      KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO, KC_NO,       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
-     KC_NO, KC_NO, KC_NO, KC_NO,  KC_G, KC_NO,      KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+     KC_NO, KC_NO, KC_NO, KC_NO,  KC_G, KC_NO,      KC_H, KC_J, KC_K, KC_L, KC_NO, KC_NO, \
      KC_NO, KC_M, KC_N, KC_O,  KC_P, KC_Q,                    KC_R, KC_S, KC_NO, KC_NO, KC_NO, KC_NO, \
-                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO\
+                                KC_NO, KC_LEFT_SHIFT, KC_NO, KC_NO, KC_RIGHT_SHIFT,   KC_NO\
   )
 };
 
